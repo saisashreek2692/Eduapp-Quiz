@@ -14,7 +14,7 @@ const Home = ({navigation}) => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <Title />
+        <Title titleText={'Edu App - Quiz Game'} />
         <View style={styles.bannerContainer}>
           <Image
             source={require('../assets/images/Exams-bro.png')}
@@ -34,6 +34,7 @@ export default Home;
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily: 'DMSans-Bold',
     paddingTop: 40,
     paddingHorizontal: 20,
     height: '100%',
@@ -56,6 +57,7 @@ const styles = StyleSheet.create({
     marginBottom: 35,
   },
   buttonText: {
+    fontFamily: 'DMSans-Bold',
     fontSize: 24,
     fontWeight: '600',
     color: '#ffffff',
